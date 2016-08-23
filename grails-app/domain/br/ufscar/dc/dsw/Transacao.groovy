@@ -10,7 +10,7 @@ class Transacao {
         caixaEletronico nullable: false
         valor nullable: false, min: 0.1d
         data nullable: false
-        quem nullable: flase
+        quem nullable: false
         motivo nullable: false
         tipo nullable: false, inList: [CREDITO, DEBITO]
     }
