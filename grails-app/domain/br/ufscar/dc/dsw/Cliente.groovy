@@ -1,6 +1,6 @@
 package br.ufscar.dc.dsw
 
-abstract class Cliente {
+abstract class Cliente extends Usuario {
 
     static hasMany = [contasCliente: ContaCliente]
 
@@ -8,6 +8,8 @@ abstract class Cliente {
     public static final String INATIVO = "Inativo"
 
     static constraints = {
+        username blank: false, unique: true
+        password blank: false
         nome blank: false, size: 1..30
         endereco nullable: false
         dtMoradia blank: false

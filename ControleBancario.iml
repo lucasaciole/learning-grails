@@ -198,6 +198,8 @@
           <root url="jar://$USER_HOME$/grails-2.4.5/lib/org.apache.ant/ant-junit/jars/ant-junit-1.8.4.jar!/" />
           <root url="jar://$USER_HOME$/grails-2.4.5/lib/org.apache.ant/ant-trax/jars/ant-trax-1.7.1.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.3-1101-jdbc41/postgresql-9.3-1101-jdbc41.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.7.RELEASE/spring-security-web-3.2.7.RELEASE.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.2.7.RELEASE/spring-security-core-3.2.7.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>

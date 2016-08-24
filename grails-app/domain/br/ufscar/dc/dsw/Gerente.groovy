@@ -1,6 +1,6 @@
 package br.ufscar.dc.dsw
 
-class Gerente {
+class Gerente extends Usuario {
 
     static constraints = {
         username blank: false, unique: true
