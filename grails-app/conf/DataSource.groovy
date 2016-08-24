@@ -1,9 +1,10 @@
 dataSource {
     pooled = true
     jmxExport = true
-    driverClassName = "org.h2.Driver"
-    username = "sa"
-    password = ""
+    driverClassName = "org.postgresql.Driver"
+    dialect = "org.hibernate.dialect.PostgreSQLDialect"
+    username = "financeiro"
+    password = "financeiro"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -33,7 +34,7 @@ environments {
             dbCreate = "update"
             url = "jdbc:postgresql://localhost:5432/financeiro"
             properties {
-                maxActive = − 1
+                maxActive = 1
                 minEvictableIdleTimeMillis = 1800000
                 timeBetweenEvictionRunsMilli s = 1800000
                 numTestsPerEvictionRun = 3
