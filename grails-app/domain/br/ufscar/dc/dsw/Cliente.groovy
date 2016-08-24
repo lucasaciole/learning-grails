@@ -1,7 +1,5 @@
 package br.ufscar.dc.dsw
 
-import javax.xml.ws.EndpointReference
-
 abstract class Cliente {
 
     static hasMany = [contasCliente: ContaCliente]
@@ -12,7 +10,7 @@ abstract class Cliente {
     static constraints = {
         nome blank: false, size: 1..30
         endereco nullable: false
-        dtMoradia blnak: false
+        dtMoradia blank: false
         status blank: false, inList: [ATIVO, INATIVO]
     }
 

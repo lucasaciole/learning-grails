@@ -6,8 +6,8 @@ class ContaCorrente extends Conta {
         agencia nullable: false
         numero blank: false
         saldo nullable: false, min: 0.0d
-        limite nullable: false, min: 0.0d
         abertura nullable: false
+        limite nullable: false, min: 0.0d
     }
 
     double limite
