@@ -25,7 +25,11 @@ class BootStrap {
 
         println "Populando cidades - OK"
 
-        def end1 = new Endereco()
+        def santander = new Banco(nome: 'Santander')
+
+        def agencia = new Agencia(numero: 0024, nome: 'Agencia UFSCar', endereco: endereco, banco: santander)
+
+        def gerente = new Gerente(nome: 'Lucas Aciole', rg: '43.796.003-1 SSP/SP', cpf:'368.845.198-86', agencia: agencia)
     }
 
     def destroy = {
